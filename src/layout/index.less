@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    min-width: 950px;
+    height: 100%;
+    .ant-layout-sider {
+        background: #001529;
+    }
+    .ant-layout-sider-trigger {
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        height: 48px;
+        color: #fff;
+        text-align: center;
+        background: #002140;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .ant-layout {
+        overflow: hidden;
+        .ant-layout-content {
+            box-sizing: border-box;
+            flex: 1;
+            padding: 10px 12px;
+            // overflow: scroll;
+        }
+    }
+}

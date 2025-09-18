@@ -49,9 +49,9 @@ const layoutIndex = (props: any) => {
                     <Layout.Content>
                         <Outlet />
                     </Layout.Content>
-                    <Layout.Footer>
+                    {/* <Layout.Footer>
                         Footer
-                    </Layout.Footer>
+                    </Layout.Footer> */}
                 </Layout>
             </div>
         </>

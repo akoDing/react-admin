@@ -36,11 +36,11 @@ export default defineConfig((mode: ConfigEnv): UserConfig => {
       port: viteEnv.VITE_PORT,
       open: viteEnv.VITE_OPEN,
       proxy: {
-        // '/api': {
-        //   target: viteEnv.VITE_API_URL,
-        //   changeOrigin: true,
-        //   rewrite: (path) => path.replace(/^\/api/, '')
-        // }
+        '/api': {
+          target: viteEnv.VITE_API_URL,
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/api/, '')
+        }
       }
     },
     build: {

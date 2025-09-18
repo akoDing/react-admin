@@ -6,7 +6,7 @@ import http from './index';
  * @returns 用户列表数据
  */
 export const getUserList = (params: { [key: string]: any }) => {
-  return http.service.post('/user/list', params);
+  return http.service.post('/api/board/widget/getData', params);
 };
 
 /**

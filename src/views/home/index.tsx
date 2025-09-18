@@ -3,11 +3,15 @@ import { Button, Modal } from "antd"
 import { formConfig } from "./config"
 import FormGenerator from "@/components/formGenerator"
 import { useState } from "react"
+import userApi from "@/api/user"
 
 const Home = () => {
 
   const handleFinish = (values: any) => {
     console.log('values', values)
+    userApi.getUserList({key: 1}).then(res => {
+      console.log('res', res)
+    })
   }
 
   const handleReset = () => {
